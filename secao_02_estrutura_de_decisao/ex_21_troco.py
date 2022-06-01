@@ -27,10 +27,81 @@ uma nota de 5 e quatro notas de 1.
 
 def calcular_troco(valor: int) -> str:
     """Escreva aqui em baixo a sua solução"""
-    tipos_de_notas = [1, 5, 10, 50, 100]
-    pedacos=[]
-    resto = valor
-    while resto > 0:
-        tipo_de_nota = tipos_de_notas.pop()
-    if len(pedacos)==1:
-        return pedacos.pop()
+    #informar quantas notas de cada valor serão fornecidas.
+    #valores: As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais.
+    #exemplo: Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, uma nota de 50, uma nota de 5 e umanota de 1;
+    #var:
+    saque = valor
+    notas_de_100 = notas_de_50 = notas_de_10 = notas_de_5 = notas_de_1 = 0
+    notas_de_100, saque = divmod(saque, 100)
+    notas_de_50, saque = divmod(saque, 50)
+    notas_de_10, saque = divmod(saque, 10)
+    notas_de_5, notas_de_1 = divmod(saque, 5)
+    parte = 0
+    #condições:
+    print("'",end="")
+    if notas_de_100 == 1:
+        print(f"{notas_de_100} nota de R$ 100",end="")
+        parte += 1
+    elif notas_de_100 > 1:
+        print(f"{notas_de_100} notas de R$ 100",end="")
+        parte += 1
+    if notas_de_50 != 0 and parte == 1:
+        print(",",end=" ")
+    if notas_de_50 == 1:
+        print(f"{notas_de_50} nota de R$ 50",end="")
+        parte += 1
+    elif notas_de_50 > 1:
+        print(f"{notas_de_50} notas de R$ 50",end="")
+        parte += 1
+    if parte != 0 and notas_de_10 != 0:
+        print(",",end=" ")
+    if notas_de_10 == 1:
+        print(f"{notas_de_10} nota de R$ 10",end="")
+        parte += 1
+    elif notas_de_10 > 1:
+        print(f"{notas_de_10} notas de R$ 10",end="")
+        parte += 1
+    if parte != 0 and notas_de_5 != 0:
+        print(",",end=" ")
+    if notas_de_5 == 1:
+        print(f"{notas_de_5} nota de R$ 5",end="")
+        parte += 1
+    elif notas_de_5 > 1:
+        print(f"{notas_de_5} notas de R$ 5",end="")
+        parte += 1
+    if parte != 0 and notas_de_1 != 0:
+        print(" e",end=" ")
+    if notas_de_1 == 1:
+        print(f"{notas_de_1} nota de R$ 1",end="")
+    elif notas_de_10 > 1:
+        print(f"{notas_de_1} notas de R$ 1",end="")
+    print("'")
+
+    # if notas_de_100 > 0:
+    #     print(f"{notas_de_100} notas de R$ 100",end=", ")
+    # if notas_de_50 > 0:
+    #     print(f"{notas_de_50} notas de R$ 50",end=", ")
+    # if notas_de_10 > 0:
+    #     print(f"{notas_de_10} notas de R$ 10",end=", ")
+    # if notas_de_5 > 0:
+    #     print(f"{notas_de_5} notas de R$ 5",end=", ")
+    # if notas_de_1 > 0:
+    #     print(f"{notas_de_1} e notas de R$ 1")
+
+
+
+
+
+
+
+
+
+
+    # tipos_de_notas = [1, 5, 10, 50, 100]
+    # pedacos=[]
+    # resto = valor
+    # while resto > 0:
+    #     tipo_de_nota = tipos_de_notas.pop()
+    # if len(pedacos)==1:
+    #     return pedacos.pop()
