@@ -49,9 +49,8 @@ def calcular_preco_da_carne(tipo_de_carne: str, kilos_de_carne: int, forma_de_pa
     """Escreva aqui em baixo a sua solução"""
     #declaração de variáveis
     preco_carne = 0
-    desconto_print = ""
-    texto_result = ""
     preco_kilo = ""
+    desconto_print = ""
     sem_desconto = ""
     #filé: R$ 4,90 por Kg até 5kg
     if tipo_de_carne == "Filé Duplo" and kilos_de_carne <= 5:
