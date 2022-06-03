@@ -48,7 +48,6 @@ def resolver_equacao_do_segundo_grau(a: float, b: float, c: float):
 
 
     
-    
 
     
     
