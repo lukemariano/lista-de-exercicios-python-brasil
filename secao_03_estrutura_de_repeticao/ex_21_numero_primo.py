@@ -40,7 +40,7 @@ divisível somente por ele mesmo e por 1.
 def eh_primo(n: int) -> bool:
     """Escreva aqui em baixo a sua solução"""
     mult=0
-
+    
     if n == 1 or n == 0:
         print(False)
     elif n > 1:   

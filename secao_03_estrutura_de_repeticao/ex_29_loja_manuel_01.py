@@ -74,3 +74,4 @@ def gerar_tabela_de_precos():
             print(f"{i:1}  - R${preco:6.2f}")
         else:
             print(f"{i:1} - R${preco:6.2f}")
+

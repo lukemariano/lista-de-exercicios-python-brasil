@@ -54,4 +54,9 @@ def calcular_estatisticas_colecao_de_cd():
     print(f"Valor total da coleção: R$ {valor_total:.2f}")
     print(f"Custo médio dos cds: R$ {valor_medio:.2f}")
 
+    
+
+
+
+
 

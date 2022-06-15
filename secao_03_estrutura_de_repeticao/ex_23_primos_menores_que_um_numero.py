@@ -60,3 +60,5 @@ def calcular_primos_e_divisoes(n: int) -> Tuple[str, int]:
     primos = primos[1:-1]
     divisores = cont
     return (primos, divisores)
+
+
