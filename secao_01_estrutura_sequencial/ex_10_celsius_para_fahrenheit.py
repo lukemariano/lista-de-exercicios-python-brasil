@@ -22,3 +22,4 @@ def transformar_para_fahrenheit():
     f = (c * 1.8) + 32 
     print(f"Essa temperatura é de",round(f),"Fahrenheit")
 
+

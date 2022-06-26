@@ -23,4 +23,5 @@ def transformar_para_celsius():
     c = (5 * ((f-32) / 9))
     print("Essa temperatura é de",round(c),"Celsius")
 
+
     

@@ -73,3 +73,4 @@ def calcular_aumento(salario: float):
       print("Aumento porcentual: 5%")
       print(f"Valor do aumento: R$ {reajuste:.2f}")
       print(f"Novo salário: R$ {salario_new:.2f}")
+

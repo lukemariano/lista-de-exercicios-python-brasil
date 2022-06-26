@@ -47,6 +47,7 @@ def resolver_equacao_do_segundo_grau(a: float, b: float, c: float):
         print(f"'Delta é {delta}, raízes são {raiz:.1f} e {raiz2:.1f}'")
 
 
+
     
 
     

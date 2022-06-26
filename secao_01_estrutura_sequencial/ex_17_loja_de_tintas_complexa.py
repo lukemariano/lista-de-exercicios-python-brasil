@@ -73,6 +73,7 @@ def calcular_latas_e_preco_de_tinta():
     #diferenca total
     diferenca_total = ((latas * capacidade_litros) + (galoes * capacidade_litros_galao))- litros
     print(f"Para menor custo, você pode comprar {latas} lata(s) de 18 litros e {galoes} galão(ões) de 3.6 litros a um custo de R$ {valor_total}. Vão sobrar {diferenca_total:.1f} litro(s) de tinta.")
+
     
 
 
