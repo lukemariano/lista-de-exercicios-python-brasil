@@ -20,3 +20,9 @@ bissexto.
 
 def eh_ano_bissexto(ano: int):
     """Escreva aqui em baixo a sua solução"""
+    #passo 1: descobrir se ano / 4 tem o resto 0 ou se é multiplo de 400; se tiver, então o ano é bissexto
+    if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+        print(True)
+    #passo 2: se não entrar nas condições acima, é falso
+    else:
+        print(False)   

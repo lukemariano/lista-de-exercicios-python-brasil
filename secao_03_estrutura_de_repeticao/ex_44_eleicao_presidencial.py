@@ -90,3 +90,42 @@ from collections import Counter
 
 def apurar_votos(*votos):
     """Escreva aqui em baixo a sua solução"""
+    votos = [*votos]
+    bostonaro = 0
+    luladrao = 0
+    dilmanta = 0
+    fhc = 0
+    nulo = 0
+    branco = 0
+    
+    for i in range(len(votos)):
+        if votos[i] == "1":
+            bostonaro += 1
+        if votos[i] == "2":
+            luladrao += 1
+        if votos[i] == "3":
+            dilmanta += 1
+        if votos[i] == "4":
+            fhc += 1
+        if votos[i] == "5":
+            nulo += 1
+        if votos[i] == "6":
+            branco += 1
+        i+=1
+
+    total_votos = bostonaro + luladrao + dilmanta + fhc + nulo + branco 
+    porcentagem_bostonaro = (bostonaro * 100) / total_votos
+    porcentagem_luladrao = (luladrao * 100) / total_votos
+    porcentagem_dilmanta = (dilmanta * 100) / total_votos
+    porcentagem_fhc = (fhc * 100) / total_votos
+    porcentagem_nulo = (nulo * 100) / total_votos
+    porcentagem_branco = (branco * 100) / total_votos
+
+    print("Código do Candidato Nome do Candidato Votos Porcentagem sobre total")
+    print(f"1                   Bostonaro         {bostonaro}{porcentagem_bostonaro:10.1f}%")
+    print(f"2                   Luladrão          {luladrao}{porcentagem_luladrao:10.1f}%")
+    print(f"3                   Dilmanta          {dilmanta}{porcentagem_dilmanta:10.1f}%")
+    print(f"4                   FHC Isentão       {fhc}{porcentagem_fhc:10.1f}%")
+    print("-------------------------------------------------------------------")
+    print(f"5                   Votos Nulos       {nulo}{porcentagem_nulo:10.1f}%")
+    print(f"6                   Votos Brancos     {branco}{porcentagem_branco:10.1f}%")
