@@ -26,7 +26,6 @@ Mostrar raízes com uma casa decimal.
 
 def resolver_equacao_do_segundo_grau(a: float, b: float, c: float):
     """Escreva aqui em baixo a sua solução"""
-
     import math
     #passo 1: calcular delta com --> delta = b*b - (4*a*c)
     delta = b*b - (4*a*c)
@@ -50,6 +49,7 @@ def resolver_equacao_do_segundo_grau(a: float, b: float, c: float):
 
 
    
+
     
 
     
